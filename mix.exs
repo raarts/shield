@@ -3,7 +3,7 @@ defmodule Shield.Mixfile do
 
   def project do
     [app: :shield,
-     version: "0.3.3",
+     version: "0.4.0",
      elixir: "~> 1.3",
      elixirc_paths: elixirc_paths(Mix.env),
      compilers: [:phoenix, :gettext] ++ Mix.compilers,
@@ -41,7 +41,7 @@ defmodule Shield.Mixfile do
      {:authable, "~> 0.7.0"},
      {:shield_notifier, "~> 0.1.0"},
      {:cors_plug, "~> 1.1.4"},
-     {:poison, "~> 3.1", override: true},
+     {:poison, "~> 2.0 or ~> 3.0 or ~> 3.1"},
      {:ex_machina, "~> 1.0.1", only: :test},
      {:credo, "~> 0.5.3", only: [:dev, :test]},
      {:ex_doc, ">= 0.14.5", only: :dev}

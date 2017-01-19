@@ -15,7 +15,7 @@ The package can be installed as:
 
     ```elixir
     def deps do
-      [{:shield, "~> 0.3.3"}]
+      [{:shield, "~> 0.4.0"}]
     end
     ```
 
