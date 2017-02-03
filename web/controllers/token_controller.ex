@@ -35,6 +35,10 @@ defmodule Shield.TokenController do
       end
     end
   end
+  def show(conn, _) do
+    @renderer.render(conn, :unprocessable_entity, %{errors:
+      %{details: "missing client_id and/or client_secret!"}})
+  end
 
   # POST /tokens
   def create(conn, %{"token" => params}),
